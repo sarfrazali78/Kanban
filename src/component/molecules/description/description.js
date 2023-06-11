@@ -8,25 +8,35 @@ import DescriptionActivity from "./descriptionActivity/descriptionActivity";
 import DescriptionCommennts from './descriptionComment/descriptionComment'
 import DescriptionTitle from './descriptionTitle/descriptionTitle'
 import ActivityList from "../activityList/activityList";
+import SideBar from "./sideBar/sidebar";
 
 
 function DescriptionModel() {
   const navigate = useNavigate();
   return (
-    <div className={styles.descriptionContainer}>
+    <div className={styles.DescriptionModel}>
       <div className={styles.descriptionMainContainer}>
+        
+        <div>
         <div className={styles.close}>
           <DescriptionTitle/>
-          <CloseIcon
-            onClick={() => navigate("/kanban")}
-            className={styles.iconClose}
-          />
+         
         </div>
         <DescriptionEdit/>
         <DescriptionActivity/>
         <DescriptionCommennts/>
         <ActivityList/>
+        </div>
+        <CloseIcon
+        sx={{
+            marginLeft: "20rem"
+        }}
+            onClick={() => navigate("/kanban")}
+            className={styles.iconClose}
+          />
+        <SideBar/>
       </div>
+      
     </div>
   );
 }

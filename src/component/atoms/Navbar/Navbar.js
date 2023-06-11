@@ -19,9 +19,9 @@ const Navbar = () => {
                    <AiOutlineStar/>
                     <a> WorkSpace Visible</a>
                     <button className={styles.board} > <SiSimpleanalytics/> Board </button> <BiChevronDown/>
-                    <a > <BsRocketTakeoffFill/> Power-Ups</a>
-                    <a > <AiTwotoneThunderbolt/> Automation</a>
-                    <a > <VscListFilter/>  Filter</a>
+                    <a> <BsRocketTakeoffFill/> Power-Ups</a>
+                    <a> <AiTwotoneThunderbolt/> Automation</a>
+                    <a> <VscListFilter/>  Filter</a>
                     <button className={styles.button}>PR</button> 
                     <button className={styles.share}> <BsFillPersonPlusFill/>  Share</button>
                     <BsThreeDots/>

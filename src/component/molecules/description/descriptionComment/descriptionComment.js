@@ -2,8 +2,8 @@ import styles from './descriptionComment.module.css'
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import { useRecoilState } from "recoil";
-import Moment from "react-moment";
-import PersonIcon from "@mui/icons-material/Person";
+//import Moment from "react-moment";
+//import PersonIcon from "@mui/icons-material/Person";
 import { getData } from '../../../organisms/data/data';
 import { list,
   uidOfListItem,atomListUid } from '../../../organisms/recoil/descriptionData';
@@ -73,8 +73,8 @@ function DescriptionComments() {
   }
 
   return (
-    <>
-      <PersonIcon className={styles.mainComments} />
+    <div className={styles.Main}>
+      
       <div className={styles.commentContainer}>
         {showComment ? (
           <div className={styles.commentTexts}>
@@ -90,7 +90,7 @@ function DescriptionComments() {
             <div>
               <Button
                 variant="contained"
-                sx={{ width: "18%", ml: 4.7 }}
+                sx={{ width: "18%", ml: 4.7, borderLeft: "1rem" }}
                 onClick={handleComments}
               >
                 Save
@@ -114,13 +114,12 @@ function DescriptionComments() {
             comment.comment &&
             comment.comment.trim() !== "" && (
               <div key={comment.id} className={styles.commentsContainer}>
-                <PersonIcon className={styles.mainComment} />
-                <small className={styles.user}>
+                {/* <small className={styles.user}>
                   <span>User</span>{" "}
                   <Moment fromNow className={styles.commentsTime}>
                     {comment.time}
                   </Moment>
-                </small>
+                </small>  */}
                 <div className={styles.eachComment}>{comment.comment}</div>
                 <div className={styles.updateComment}>
                   <button
@@ -135,7 +134,7 @@ function DescriptionComments() {
             )
         )}
       </div>
-    </>
+    </div>
   );
 }
 

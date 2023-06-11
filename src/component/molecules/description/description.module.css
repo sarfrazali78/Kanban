@@ -1,0 +1,37 @@
+.DescriptionModel{
+    border: 1rem solid whitesmoke;
+    background-image: url('/public/images.jpeg');
+    display: flex;
+    flex-direction: column;
+    color: rgb(68, 67, 67);
+    height:90rem;
+    width:85rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(107, 106, 106);
+   
+}
+
+.descriptionMainContainer{
+    margin-top: -10rem;
+    margin-right: 3rem;
+    display: flex;
+    width:37rem;
+    background-color: #F1F2F4;
+    padding:1.5rem;
+    border-radius: 10px;
+    overflow: auto;
+    height:60rem;
+  }
+  
+  .close {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .iconClose {
+    cursor: pointer;
+  }
+  

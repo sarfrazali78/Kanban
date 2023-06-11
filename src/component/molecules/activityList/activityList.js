@@ -2,7 +2,7 @@ import styles from './activityList.module.css'
 import { useRecoilValue } from "recoil";
 import { useRecoilState } from "recoil";
 import { useState, useEffect } from "react";
-import {ShowActivity,atomListUid,list,uidOfListItem} from "../../organisms/recoil/descriptionData";
+import { ShowActivity,atomListUid,list,uidOfListItem } from "../../organisms/recoil/descriptionData";
 import PersonIcon from "@mui/icons-material/Person";
 import { getData } from '../../organisms/data/data';
 
@@ -46,7 +46,6 @@ export default function ActivityList() {
       <div className={styles.activityMain}>
         {detailsHide && (
           <div className={styles.timeContainer}>
-            {/* <PersonIcon /> */}
             <div className={styles.activity}>
               {time.map((ele, index) => (
                 <div className={styles.activityUserDetails} key={index}>

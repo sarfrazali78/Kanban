@@ -5,11 +5,7 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import TextField from "@mui/material/TextField";
 import { useState, useEffect } from "react";
-import {
-    atomListUid,
-    list,
-    uidOfListItem,atomCardName, Watch
-} from "../../../organisms/recoil/descriptionData";
+import { atomListUid,list,uidOfListItem,atomCardName, Watch } from "../../../organisms/recoil/descriptionData";
 import { getData } from '../../../organisms/data/data';
 import { GlobalStyles } from '@mui/material';
 
@@ -82,7 +78,7 @@ export default function DescriptionTitle() {
                   <p onClick={() => setTitleEdit(!titleEdit)}>{titleText}</p>
                 )}
               </form>
-              <div className={styles.listName}>
+              {/* <div className={styles.listName}>
                 <small>
                   in list{" "}
                   <span className={styles.listTitleName}>{listTitle} </span>{" "}
@@ -90,7 +86,7 @@ export default function DescriptionTitle() {
                 {watch && (
                   <VisibilityOutlinedIcon style={{ fontSize: "16px" }} />
                 )}
-              </div>
+              </div> */}
             </div>
             <div className={styles.contentContainer}>
               <div className={styles.notificationContainer}>

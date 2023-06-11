@@ -17,7 +17,7 @@ function DescriptionActivity() {
             <p>Activity</p>
           </div>
         </div>
-        <div
+         <div
           className={styles.hideDetails}
           onClick={() => setDetailsHide(!detailsHide)}
         >

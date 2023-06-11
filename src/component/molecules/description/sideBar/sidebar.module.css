@@ -1,0 +1,28 @@
+.MainSideBar{
+    margin-top:3rem;
+    margin-left: -15rem;
+    border: 1rem whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 17rem;
+}
+
+.SideBar{
+    margin-top: 1px;
+    margin-left: 1rem;
+    border: 1px solid whitesmoke;
+    display: flex;
+    background-color:  #E4E6EA;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+
+}
+
+.SideBar:hover{
+    background-color: rgb(215, 226, 236);
+}

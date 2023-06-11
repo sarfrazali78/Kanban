@@ -16,7 +16,7 @@ function App() {
     if (listData.length != 0) {
       localStorage.setItem("listData", JSON.stringify(listData));
     }
-    setBgWallpaper(localStorage.getItem("userWallpaper") || "bcgImg.png");
+    setBgWallpaper(localStorage.getItem("userWallpaper"));
   }, [listData]);
 
   return (
