@@ -1,0 +1,68 @@
+.mainCardDiv{
+    background-color: blanchedalmond;
+    border-radius:7.5px;
+    width:15rem;
+    
+    
+}
+.itemOfCardDiv{
+    background-color: rgb(198, 223, 245);
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+}
+.cardTitle{
+    
+}
+.btnWrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+
+}
+.editBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+.cardItemUpdationDiv{
+    background-color:lightcoral;
+    border-radius:5px;
+    
+}
+.titleForItemField{
+    background-color: wheat;
+    width:85%;
+    margin-left: 5%;
+    margin-top:5%;
+    
+}
+.updateCardItemBtn{
+    margin-left: 32.5%;
+    margin-bottom:3% ;
+}
+.dltBtn{
+    background-color: transparent;
+    border: none;
+}
+.addCartItem{
+    background-image: linear-gradient(red,burlywood);
+    width: 85%;
+    margin-left: 8%;
+    border-radius: 10px;
+    
+    
+
+}
+.addCardBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,7 +1,6 @@
 import styles from './addTodo.module.css'
 import React, { useEffect, useState, useRef } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import RollerShadesClosedOutlinedIcon from "@mui/icons-material/RollerShadesClosedOutlined";
 import AddItem from "../../atoms/AddItem/AddItem";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import { v4 as uuid } from "uuid";
@@ -259,6 +258,7 @@ export default function AddTodo({ listName, listId, handleDelete, index }) {
                               ❌
                             </button>
                           </div>
+                          
                         </div>
                       )}
                     </Draggable>
@@ -289,12 +289,7 @@ export default function AddTodo({ listName, listId, handleDelete, index }) {
                           Add a card
                         </button>
                       </div>
-                      <div>
-                        <RollerShadesClosedOutlinedIcon
-                          fontSize="small"
-                          color="disabled"
-                        />
-                      </div>
+                      
                     </div>
                   )}
                 </footer>
