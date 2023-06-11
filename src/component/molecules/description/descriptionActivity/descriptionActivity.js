@@ -1,7 +1,7 @@
 import styles from './descriptionActivity.module.css' 
-import { ShowActivity } from "../../recoil/description_atoms/DescriptionAtoms";
 import { useRecoilState } from "recoil";
 import TocIcon from "@mui/icons-material/Toc";
+import { ShowActivity } from '../../../organisms/recoil/descriptionData';
 
 function DescriptionActivity() {
   const [detailsHide, setDetailsHide] = useRecoilState(ShowActivity);

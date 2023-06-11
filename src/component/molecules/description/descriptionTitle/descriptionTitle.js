@@ -1,5 +1,4 @@
 import styles from './descriptionTitle.module.css'
-import { Watch } from "../../recoil/description_atoms/DescriptionAtoms";
 import { useRecoilState } from "recoil";
 import DvrOutlinedIcon from "@mui/icons-material/DvrOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
@@ -9,10 +8,12 @@ import { useState, useEffect } from "react";
 import {
     atomListUid,
     list,
-    uidOfListItem,atomCardName
+    uidOfListItem,atomCardName, Watch
 } from "../../../organisms/recoil/descriptionData";
 import { getData } from '../../../organisms/data/data';
 import { GlobalStyles } from '@mui/material';
+
+
 export default function DescriptionTitle() {
   const [watch, setWatch] = useRecoilState(Watch);
   const [titleEdit, setTitleEdit] = useState(false);

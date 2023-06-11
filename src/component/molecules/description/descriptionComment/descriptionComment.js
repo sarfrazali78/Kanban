@@ -2,15 +2,11 @@ import styles from './descriptionComment.module.css'
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import { useRecoilState } from "recoil";
-import { getData } from "../../utils/Services";
-import {
-  list,
-  uidOfListItem,
-  atomListUid,
-} from "../../recoil/description_atoms/DescriptionAtoms";
 import Moment from "react-moment";
-
 import PersonIcon from "@mui/icons-material/Person";
+import { getData } from '../../../organisms/data/data';
+import { list,
+  uidOfListItem,atomListUid } from '../../../organisms/recoil/descriptionData';
 
 function DescriptionComments() {
   const [showComment, setShowComment] = useState(false);

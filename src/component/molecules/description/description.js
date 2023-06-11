@@ -7,7 +7,8 @@ import DescriptionEdit from "./descriptionEdit/descriptionEdit";
 import DescriptionActivity from "./descriptionActivity/descriptionActivity";
 import DescriptionCommennts from './descriptionComment/descriptionComment'
 import DescriptionTitle from './descriptionTitle/descriptionTitle'
-import ActivityList from './activityList/'
+import ActivityList from "../activityList/activityList";
+
 
 function DescriptionModel() {
   const navigate = useNavigate();

@@ -1,13 +1,12 @@
 import "./App.css";
-import AddList from "./Components/add_list/AddList";
-import Navbar from "./Components/Navbar/Navbar";
+import AddList from "./component/molecules/addList/addList";
+import Navbar from "./component/atoms/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
-import { list, wallpaper } from "./recoil/description_atoms/DescriptionAtoms";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { list, wallpaper } from "./component/organisms/recoil/descriptionData";
+import { RecoilRoot,useRecoilState, useRecoilValue } from "recoil";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DescriptionModel from "./Components/Description/Description";
-
+import DescriptionModel from "./component/molecules/description/description";
 
 function App() {
   const [listData, setListData] = useRecoilState(list);

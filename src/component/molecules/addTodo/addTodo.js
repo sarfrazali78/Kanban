@@ -2,24 +2,21 @@ import styles from './addTodo.module.css'
 import React, { useEffect, useState, useRef } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RollerShadesClosedOutlinedIcon from "@mui/icons-material/RollerShadesClosedOutlined";
-import AddItem from "../../atoms/add_item/AddItem";
+import AddItem from "../../atoms/AddItem/AddItem";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import { v4 as uuid } from "uuid";
 import Popup from "reactjs-popup";
 import { useNavigate } from "react-router-dom";
-import {
-  uidOfListItem,
-  atomListUid,
-  atomCardName,
-} from "../../recoil/description_atoms/DescriptionAtoms";
 import { useRecoilState } from "recoil";
-import { list } from "../../recoil/description_atoms/DescriptionAtoms";
-
-import MorePopOver from "./more/More";
+import { list } from "../../organisms/recoil/descriptionData";
+import MorePopOver from "./more";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 import { getData } from '../../organisms/data/data';
+import { uidOfListItem,atomListUid,atomCardName } from '../../organisms/recoil/descriptionData';
 
-function AddTodo({ listName, listId, handleDelete, index }) {
+
+
+export default function AddTodo({ listName, listId, handleDelete, index }) {
   const [listData, setListData] = useRecoilState(list);
 
   let data = getData();
@@ -310,5 +307,3 @@ function AddTodo({ listName, listId, handleDelete, index }) {
     </Draggable>
   );
 }
-
-export default AddTodo;

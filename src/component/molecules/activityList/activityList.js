@@ -2,14 +2,10 @@ import styles from './activityList.module.css'
 import { useRecoilValue } from "recoil";
 import { useRecoilState } from "recoil";
 import { useState, useEffect } from "react";
-import {
-  list,
-  uidOfListItem,
-  atomListUid,
-} from "../../recoil/description_atoms/DescriptionAtoms";
+import {ShowActivity,atomListUid,list,uidOfListItem} from "../../organisms/recoil/descriptionData";
 import PersonIcon from "@mui/icons-material/Person";
 import { getData } from '../../organisms/data/data';
-import { ShowActivity } from '../../organisms/recoil/descriptionData';
+
 
 export default function ActivityList() {
   const detailsHide = useRecoilValue(ShowActivity);
