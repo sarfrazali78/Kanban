@@ -13,7 +13,7 @@ import {
 } from "../../../organisms/recoil/descriptionData";
 import { getData } from '../../../organisms/data/data';
 import { GlobalStyles } from '@mui/material';
-function DescriptionTitle() {
+export default function DescriptionTitle() {
   const [watch, setWatch] = useRecoilState(Watch);
   const [titleEdit, setTitleEdit] = useState(false);
   const [titleText, setTitleText] = useRecoilState(atomCardName);
@@ -132,4 +132,4 @@ function DescriptionTitle() {
   );
 }
 
-export default DescriptionTitle;
+
