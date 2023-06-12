@@ -5,7 +5,7 @@ body{
 .container{
     border: 2px solid whitesmoke;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 1rem;
     background-color: lightgray;
     opacity: 0.3px;
@@ -13,6 +13,7 @@ body{
 
 }
 .btnWrapper{
+    display: flex;
     border: 0.5px solid wheat;
     color: blueviolet;
     margin:auto
@@ -47,4 +48,7 @@ body{
     margin-left: 22.5%;
 
 
+}
+.closeIcon{
+    width: 5rem;
 }

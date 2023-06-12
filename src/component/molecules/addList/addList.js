@@ -55,7 +55,7 @@ export default function AddList() {
               ref={provided.innerRef}
               style={{
                 display: "flex",
-                // background: snapshot.isDraggingOver ? "lightblue" : "grey",
+                
               }}
             >
               {listData.map((list, index) => (
@@ -98,7 +98,7 @@ export default function AddList() {
               Enter Title
               </Button>}
                 
-                <Button color="secondary" id={styles.closeIcon} startIcon={<CloseIcon/>} variant='contained' onClick={()=>setIsVisible(!isVisible)}>Close</Button>
+                <Button style={{  }}color="secondary" className={styles.closeIcon}  variant='contained' onClick={()=>setIsVisible(!isVisible)}>Close</Button>
               
             </div>
           </div>

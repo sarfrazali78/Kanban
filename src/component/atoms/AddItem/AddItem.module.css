@@ -10,6 +10,7 @@
     outline: none;
 }
 .addCardFooter{
+    display: flex;
     background-color: blanchedalmond;
 }
 .addCardBtn{
